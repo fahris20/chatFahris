@@ -5,14 +5,12 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     tools:context=".tampilan1">
-
     <TextView
         android:id="@+id/penerima"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Penerima"
         android:textSize="24sp" />
-
     <TextView
         android:id="@+id/text_header"
         android:layout_width="wrap_content"
@@ -20,7 +18,6 @@
         android:layout_below="@+id/penerima"
         android:text="Jawaban Diterima"
         android:textStyle="bold" />
-
     <TextView
         android:id="@+id/text_message"
         android:layout_width="wrap_content"

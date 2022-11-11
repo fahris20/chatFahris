@@ -1,5 +1,4 @@
 package com.example.chatfahris;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -10,6 +9,7 @@ import android.widget.TextView;
 
 public class tampilan1 extends AppCompatActivity {
 
+    // membuat variable
     public static final String EXTRA_MESSAGE="MESSAGE";
     public static final int TEXT_REQUEST=1;
     private EditText editText;
@@ -20,15 +20,16 @@ public class tampilan1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tampilan1);
 
+        // mendeklarasikan variable dengan id yang sudah di buat sebelumnya
         editText = findViewById(R.id.editText);
         textViewMessage = findViewById(R.id.text_message);
-
         penerima = findViewById(R.id.penerima);
+
         Intent intent = getIntent();
         String kontak = intent.getStringExtra(MainActivity.KONTAK);
         penerima.setText(kontak);
     }
-
+    // untuk memindahkan ke page selanjutnya ketika klik tombol send
     public void openSecondActivity (View view){
         Intent intent = new Intent(tampilan1.this, tampilan2.class);
         String message = editText.getText().toString();
